@@ -88,6 +88,7 @@ handleClick = (e) =>{ console.log(this.state);}
 ~~~
 # React Create App
 
+* npx create-react-app app_name
 
 
 
