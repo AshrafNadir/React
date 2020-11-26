@@ -4,9 +4,6 @@
 
 [![Ashraf Nadir](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-
-# INTRODUCTION
-- Giving a farm idea about what we will do.
 # HOW IT WORKS
 
   - DOM-Document Object Model
@@ -89,8 +86,39 @@ handleClick = (e) =>{ console.log(this.state);}
 # React Create App
 
 * npx create-react-app app_name
+* cd app_name
+* npm start
 
+# Nested Components & Props method
+>  There will be a main component where other components will be rendered.
+~~~
+import React, { Component } from "react";
+class Ninjas extends Component {
+    render() {
+        const { name, age, belt } = this.props;  // store this like this
+        return ( 
+            <div > Name: { name } </div> 
+            <div> Age: {age} </div> 
+            <div > Belt: { belt } </div>
+        );
+    }
+}
+export default Ninjas;  // export it like this 
+~~~
+> export it to main component and import it to main component
+~~~
+import React, {Component} from "react";
+import Ninjas from "./Ninjas";  //import like this 
 
+function App() {
+  return (
+    <div>
+      <Ninjas name = "Ryu" age = "25" belt = "black" / >  // to render just command                                                        like this and props 
+    </div>
+  );
+}
+export default App;
+~~~
 
 
 
