@@ -7,9 +7,8 @@ class Ninjas extends Component {
         return ( <
             div className = "ninja" >
             <
-            div > Name: { name } < /div> <
-            div > Age: { age } < /div> <
-            div > Belt: { belt } < /div> <
+            div > Name: { name } < /div> <div> Age: {age} </div > { " " } <
+            div > Belt: { belt } < /div>{" "} <
             /div>
         );
     }
