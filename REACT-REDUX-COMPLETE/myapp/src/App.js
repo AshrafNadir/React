@@ -11,13 +11,12 @@ function App() {
             ],
         };*/
     render(); {
-        return ( <
-            div className = "App" >
-            <
-            h1 > My first React App < /h1> <p> Welcome: ) </p > { " " } <
-            Ninjas ninjas = { this.state.ninjas }
-            />{" "} <
-            /div>
+        return ( 
+        <div className = "App" >
+            <h1> My first React App </h1> 
+            <p> Welcome: ) </p>
+             <Ninjas ninjas = { this.state.ninjas}/> 
+        </div>
         );
     }
 }
