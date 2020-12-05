@@ -2,21 +2,21 @@ import { render } from "@testing-library/react";
 import React, { Component } from "react";
 import Ninjas from "./Ninjas";
 
-function App() {
-    /*  state = {
-            ninjas: [
-                { Name: "Nadir", Age: 26, Belt: "Black", ID: 1 },
-                { Name: "Adil", Age: 27, Belt: "Yellow", ID: 2 },
-                { Name: "Shakhawat", Age: 28, Belt: "White", ID: 3 },
-            ],
-        };*/
-    render(); {
-        return ( 
-        <div className = "App" >
-            <h1> My first React App </h1> 
-            <p> Welcome: ) </p>
-             <Ninjas ninjas = { this.state.ninjas}/> 
-        </div>
+class App extends Component {
+    state = {
+        ninjas: [
+            { name: 'Nadir', age: 19, belt: 'Black', id: 1 },
+            { name: 'Adil', age: 27, belt: 'Yellow', id: 2 },
+            { name: 'Shakhawat', age: 28, belt: 'White', id: 3 }
+        ]
+    }
+    render() {
+        return (
+            <div className="App" >
+                <h1> My first React App </h1>
+                <p> Welcome :)</p>
+                <Ninjas ninjas={this.state.ninjas} />
+            </div>
         );
     }
 }
