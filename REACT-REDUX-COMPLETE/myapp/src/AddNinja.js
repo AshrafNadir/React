@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//const { Component } = require("react")
 
 
 class AddNinja extends Component {
@@ -16,7 +15,6 @@ class AddNinja extends Component {
     }
     handleSubmit = (e) => {
         e.prevantDefault();
-        //console.log(this.state);
         this.props.addNinja(this.state);
     }
     render() {
