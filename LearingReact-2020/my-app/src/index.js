@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
-//const TodoTitle = "Todo App";
+const TodoTitle = "Todo App";
 const Desc = "loren ipsum ...";
 const date = "21/2020";
 
@@ -16,7 +15,14 @@ const date = "21/2020";
 ReactDOM.render(
     <div>
         <h1 className="headingStyle">Todo App</h1>
-        <p>{Desc}{date}</p>
+        <div className="card">
+            <h3 className="card-title">{TodoTitle}</h3>
+            <p className="card-desc">{Desc}</p>
+            <p className="card-footer">{date}</p>
+
+        </div>
+
+
     </div>,
     document.getElementById('root')
 )
