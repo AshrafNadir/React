@@ -1,12 +1,12 @@
-const TodoTitle = "Todo App";
-const Desc = "loren ipsum ...";
+//const TodoTitle = "Todo App";
+//const Desc = "loren ipsum ...";
 const date = "21/2020";
 
-function Card() {
+function Card(props) {
     return (
         <div className="card">
-            <h3 className="card-title">{TodoTitle}</h3>
-            <p className="card-desc">{Desc}</p>
+            <h3 className="card-title">{props.titleText}</h3>
+            <p className="card-desc">{props.desc}</p>
             <p className="card-footer">{date}</p>
         </div>
     )
