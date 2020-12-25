@@ -3,10 +3,11 @@
 const date = "21/2020";
 
 function Card(props) {
+    const { titleText, desc } = props;
     return (
         <div className="card">
-            <h3 className="card-title">{props.titleText}</h3>
-            <p className="card-desc">{props.desc}</p>
+            <h3 className="card-title">{titleText}</h3>
+            <p className="card-desc">{desc}</p>
             <p className="card-footer">{date}</p>
         </div>
     )
