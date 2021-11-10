@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './Builder.module.css'
-import Items from './Itmes/Items'
-import Modal from './Modal/Modal'
-import TotalPrice from './TotalPrice/TotalPrice'
+import { Items } from './Itmes/Items'
+import { Modal } from './Modal/Modal'
+import { TotalPrice } from './TotalPrice/TotalPrice'
 
  export const Builder = () => {
     return (

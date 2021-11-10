@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './IceCream.module.css';
-import Scoop from './Scoop/Scoop';
+import { Scoop } from './Scoop/Scoop';
 
 export const IceCream = () => {
     return (
