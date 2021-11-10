@@ -4,7 +4,7 @@ import Items from './Itmes/Items'
 import Modal from './Modal/Modal'
 import TotalPrice from './TotalPrice/TotalPrice'
 
-export const Builder = () => {
+ export const Builder = () => {
     return (
       <div>
         <div className={classes.builder}>
@@ -21,3 +21,4 @@ export const Builder = () => {
       </div>    
     )
 }
+
