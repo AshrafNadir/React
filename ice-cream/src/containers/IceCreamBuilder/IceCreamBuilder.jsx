@@ -25,8 +25,8 @@ export default class IceCreamBuilder extends Component{
         const{items}=this.state;
         return (
             <div className={[classes.container,'container'].join(' ')}>
-               <IceCream items={items}/>
-               <Builder />
+               <IceCream/>
+               <Builder items={items}/>
                 
             </div>
         )

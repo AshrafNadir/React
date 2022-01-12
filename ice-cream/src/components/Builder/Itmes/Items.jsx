@@ -1,11 +1,11 @@
-import React from 'react'
-import { Item } from '../Itmes/Item'
+import React from 'react';
 
-export const Items = () => {
+export const Items = ({items}) => {
+    const flavors = Object.keys(items);
     return (
         <div>
             <ul>
-                <Item />
+                {flavors.map(flavor=><item key={flavor} name={flavor}/>)}
             </ul>
         </div>
     )
